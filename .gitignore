@@ -5,3 +5,5 @@
 /Libraries
 /VS.2015/Release
 /VS.2015/.vs/Barony/v16
+/build
+/src/Config.hpp

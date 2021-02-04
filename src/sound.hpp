@@ -178,7 +178,7 @@ struct FMOD_VECTOR {
 extern OPENAL_BUFFER** sounds;
 extern Uint32 numsounds;
 extern OPENAL_BUFFER** minesmusic;
-#define NUMMINESMUSIC 4
+#define NUMMINESMUSIC 5
 extern OPENAL_BUFFER** swampmusic;
 #define NUMSWAMPMUSIC 3
 extern OPENAL_BUFFER** labyrinthmusic;
@@ -205,6 +205,43 @@ extern OPENAL_BUFFER* hamletmusic;
 #define NUMCAVESMUSIC 3
 #define NUMCITADELMUSIC 3
 #define NUMINTROMUSIC 3
+extern OPENAL_BUFFER** burgmusic;
+#define NUMBURGMUSIC 2
+extern OPENAL_BUFFER* crypticspiralmusic;
+extern OPENAL_BUFFER* matildasforestmusic;
+extern OPENAL_BUFFER** tundramusic;
+#define NUMTUNDRAMUSIC 3
+extern OPENAL_BUFFER** icedungmusic;
+#define NUMICEDUNGMUSIC 2
+extern OPENAL_BUFFER* snowtownmusic;
+extern OPENAL_BUFFER* catedralmusic;
+extern OPENAL_BUFFER** catacombsmusic;
+#define NUMCATACOMBSMUSIC 3
+extern OPENAL_BUFFER** fleshmusic;
+#define NUMFLESHMUSIC 2
+extern OPENAL_BUFFER* othersecretmusic;
+extern OPENAL_BUFFER* prenecropolismusic;
+extern OPENAL_BUFFER* necropolismusic;
+extern OPENAL_BUFFER** abyssmusic;
+#define NUMABYSSMUSIC 3
+extern OPENAL_BUFFER** emptymusic;
+#define NUMEMPTYMUSIC 2
+extern OPENAL_BUFFER* preabyssbossmusic;
+extern OPENAL_BUFFER* abyssbossmusic, *posabyssbossmusic;
+extern OPENAL_BUFFER** antnestmusic;
+#define NUMANTNESTMUSIC 2
+extern OPENAL_BUFFER* vaultmusic;
+extern OPENAL_BUFFER** farmmusic;
+#define NUMFARMMUSIC 2
+extern OPENAL_BUFFER** islandmusic;
+#define NUMISLANDMUSIC 2
+extern OPENAL_BUFFER** wormsmusic;
+#define NUMWORMSMUSIC 2
+extern OPENAL_BUFFER** factorymusic;
+#define NUMFACTORYMUSIC 2
+extern OPENAL_BUFFER** lostmusic;
+#define NUMLOSTMUSIC 2
+
 //TODO: Automatically scan the music folder for a mines subdirectory and use all the music for the mines or something like that. I'd prefer something neat like for that loading music for a level, anyway. And I can just reuse the code I had for ORR.
 
 extern OPENAL_SOUND* music_channel, *music_channel2, *music_resume; //TODO: List of music, play first one, fade out all the others? Eh, maybe some other day. //music_resume is the music to resume after, say, combat or shops. //TODO: Clear music_resume every biome change. Or otherwise validate it for that level set.

@@ -608,11 +608,13 @@ void handleLevelMusic()
 		{
 			if ( hamletmusic )
 			{
+                                printlog("Playing hamlet music");
 				playmusic(hamletmusic, true, true, true);
 			}
 			else
 			{
-				playmusic(minesmusic[4], true, true, true);
+                                printlog("Playing mines music");
+				playmusic(minesmusic[2], true, true, true);
 			}
 		}
 		else if ( !strncmp(map.name, "The Burg", 9))     // the Burg
@@ -1564,11 +1566,15 @@ void handleLevelMusic()
 		{
 			if ( hamletmusic )
 			{
+                                printlog("Playing hamletmusic\n");
 				playmusic(hamletmusic, true, true, true);
-			}
+				printlog("Starting playing hamletmusic\n");
+                        }
 			else
 			{
+                                printlog("Playing mines music\n");
 				playmusic(minesmusic[4], true, true, true);
+				printlog("Started playing minesmusic4\n");
 			}
 		}
 		else
